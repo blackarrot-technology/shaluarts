@@ -15,7 +15,6 @@
         "slide_cYwNNi": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/TOP-BANNERS-1.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -33,7 +32,6 @@
         "slide_NB8RCb": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/TOP-BANNERS-999SILVER-24K-GOLD.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -51,7 +49,6 @@
         "slide_7JhMrU": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/TOP-BANNERS-CORPORATE.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -69,7 +66,6 @@
         "slide_e3xwbR": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/TOP-BANNERS-UNIVERSITY.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -87,7 +83,6 @@
         "slide_iyLpyD": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/TOP-BANNERS-POG.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -128,7 +123,6 @@
           "type": "collection_block",
           "settings": {
             "collection": "divine",
-            "collection_image": "shopify://shop_images/image_16.png",
             "block_title": "Divine",
             "block_subtitle": "Explore"
           }
@@ -137,7 +131,6 @@
           "type": "collection_block",
           "settings": {
             "collection": "home-decor",
-            "collection_image": "shopify://shop_images/image_17.png",
             "block_title": "Home Décor",
             "block_subtitle": "Explore"
           }
@@ -146,7 +139,6 @@
           "type": "collection_block",
           "settings": {
             "collection": "automobile",
-            "collection_image": "shopify://shop_images/image_18.png",
             "block_title": "Automobile",
             "block_subtitle": "Explore"
           }
@@ -155,7 +147,6 @@
           "type": "collection_block",
           "settings": {
             "collection": "corporate",
-            "collection_image": "shopify://shop_images/image_19.png",
             "block_title": "Corporate",
             "block_subtitle": "Explore"
           }
@@ -164,7 +155,6 @@
           "type": "collection_block",
           "settings": {
             "collection": "university",
-            "collection_image": "shopify://shop_images/image_20.png",
             "block_title": "University",
             "block_subtitle": "Explore"
           }
@@ -173,7 +163,6 @@
           "type": "collection_block",
           "settings": {
             "collection": "wedding",
-            "collection_image": "shopify://shop_images/image_21.png",
             "block_title": "Wedding",
             "block_subtitle": "Explore"
           }
@@ -182,7 +171,6 @@
           "type": "collection_block",
           "settings": {
             "collection": "incense-aroma",
-            "collection_image": "shopify://shop_images/image_22.png",
             "block_title": "Incense Aromas",
             "block_subtitle": "Explore"
           }
@@ -191,7 +179,6 @@
           "type": "collection_block",
           "settings": {
             "collection": "ram-mandir",
-            "collection_image": "shopify://shop_images/image_23.png",
             "block_title": "Ram Mandir",
             "block_subtitle": "Explore"
           }
@@ -200,7 +187,6 @@
           "type": "collection_block",
           "settings": {
             "collection": "yantra",
-            "collection_image": "shopify://shop_images/image_24.png",
             "block_title": "Yantra",
             "block_subtitle": "Explore"
           }
@@ -209,7 +195,6 @@
           "type": "collection_block",
           "settings": {
             "collection": "925-pure-silver",
-            "collection_image": "shopify://shop_images/image_25.png",
             "block_title": "Pure Silver",
             "block_subtitle": "Explore"
           }
@@ -263,7 +248,6 @@
         "button"
       ],
       "settings": {
-        "image": "shopify://shop_images/MIDDLE-BANNER-HOME-DECOR.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "bottom-center",
@@ -314,7 +298,6 @@
             "video_type": "uploaded",
             "video_id": "jlUQcpeUpYA",
             "uploadedvideourl": "https://cdn.shopify.com/videos/c/o/v/df074e8890324dd18924fde864b72f16.mp4",
-            "thumbnail_image": "shopify://shop_images/sddefault_2a9a4d25-9f8d-4065-af69-b35149444a3b.jpg",
             "video_date": "10 Nov 2024",
             "video_caption": "Premium Pooja Set for Diwali"
           }
@@ -325,7 +308,6 @@
             "video_type": "uploaded",
             "video_id": "jlUQcpeUpYA",
             "uploadedvideourl": "https://cdn.shopify.com/videos/c/o/v/c373e1d4d3844c43a88b95cd3d1e803a.mp4",
-            "thumbnail_image": "shopify://shop_images/sddefault_2a9a4d25-9f8d-4065-af69-b35149444a3b.jpg",
             "video_date": "24 Oct 2024",
             "video_caption": "Premium Pooja Set for Ganesh Pooja"
           }
@@ -336,7 +318,6 @@
             "video_type": "uploaded",
             "video_id": "jlUQcpeUpYA",
             "uploadedvideourl": "https://cdn.shopify.com/videos/c/o/v/4a40ed598a1f4cd5bfd4c95bc953495d.mp4",
-            "thumbnail_image": "shopify://shop_images/sddefault_2a9a4d25-9f8d-4065-af69-b35149444a3b.jpg",
             "video_date": "20 Dec 2024",
             "video_caption": "Premium Pooja Set for Laxmi Pooja"
           }
@@ -347,7 +328,6 @@
             "video_type": "uploaded",
             "video_id": "jlUQcpeUpYA",
             "uploadedvideourl": "https://cdn.shopify.com/videos/c/o/v/2ce9653b0cec4c3587f167bf496a27d3.mp4",
-            "thumbnail_image": "shopify://shop_images/sddefault_2a9a4d25-9f8d-4065-af69-b35149444a3b.jpg",
             "video_date": "12 Jan 2024",
             "video_caption": "Premium Pooja Set for Shiv Pooja"
           }
@@ -358,7 +338,6 @@
             "video_type": "uploaded",
             "video_id": "jlUQcpeUpYA",
             "uploadedvideourl": "https://cdn.shopify.com/videos/c/o/v/687370539f144a95964aff804b2ffa5e.mp4",
-            "thumbnail_image": "shopify://shop_images/sddefault_2a9a4d25-9f8d-4065-af69-b35149444a3b.jpg",
             "video_date": "29 Mar 2024",
             "video_caption": "Premium Pooja Set for Parvati Pooja"
           }
@@ -370,7 +349,6 @@
             "video_type": "youtube",
             "video_id": "jlUQcpeUpYA",
             "uploadedvideourl": "",
-            "thumbnail_image": "shopify://shop_images/sddefault_2a9a4d25-9f8d-4065-af69-b35149444a3b.jpg",
             "video_date": "28 May 2024",
             "video_caption": "Premium Pooja Set for Hanuman Pooja"
           }
@@ -382,7 +360,6 @@
             "video_type": "youtube",
             "video_id": "jlUQcpeUpYA",
             "uploadedvideourl": "",
-            "thumbnail_image": "shopify://shop_images/sddefault_2a9a4d25-9f8d-4065-af69-b35149444a3b.jpg",
             "video_date": "18 Aug 2024",
             "video_caption": "Premium Pooja Set for Kanya Poojan"
           }
@@ -426,9 +403,9 @@
       "type": "insta-feed-section",
       "settings": {
         "instafeeds_title": "Social Media",
-        "instafeeds_subtitle": "Express Yourself <b>with</b> #Diviniti",
+        "instafeeds_subtitle": "Express Yourself with #Shaluarts",
         "instafeeds_button_text": "Explore Instagram",
-        "instafeeds_button_link": "https://www.instagram.com/houseofdiviniti",
+        "instafeeds_button_link": "#",
         "instafeeds_padding_top": 70,
         "instafeeds_padding_bottom": 70,
         "instafeeds_mobile_padding_top": 20,
@@ -441,7 +418,6 @@
         "collection_block_39GFYA": {
           "type": "collection_block",
           "settings": {
-            "event_image": "shopify://shop_images/event-pic-1.png",
             "event_title": "Diviniti News Event",
             "event_subtitle": "A proud moment for us as we presented our Portrait on 24k Gold to the lovely Rakul Preet at the International Quality Awards by Brands Impact."
           }
@@ -449,7 +425,6 @@
         "collection_block_GcAVYD": {
           "type": "collection_block",
           "settings": {
-            "event_image": "shopify://shop_images/event-pic-2.png",
             "event_title": "Diviniti News Event",
             "event_subtitle": "We are thrilled to have been the gifting sponsor for the prestigious @BrandsImpact Event held on December 22nd, at @vivantahotels - New Delhi."
           }
@@ -457,7 +432,6 @@
         "collection_block_q9ndNV": {
           "type": "collection_block",
           "settings": {
-            "event_image": "shopify://shop_images/event-pic-3.png",
             "event_title": "Diviniti News Event",
             "event_subtitle": "Make this Christmas Unforgettable for your Loved ones with Diviniti’s unique collection of sterling silver and 24k gold-plated gifts!"
           }
@@ -469,7 +443,7 @@
         "collection_block_q9ndNV"
       ],
       "settings": {
-        "mediaevent_heading": "DIVINITI",
+        "mediaevent_heading": "SHALUARTS",
         "mediaevent_subheading": "News & Events",
         "mediaevent_button_text": "View More",
         "mediaevent_button_link": "/",

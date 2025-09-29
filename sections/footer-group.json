@@ -45,7 +45,6 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/new-footer-logo.png",
             "image_width": 180,
             "alignment": "center"
           }
@@ -55,36 +54,35 @@
           "disabled": true,
           "settings": {
             "heading": "",
-            "menu": "footer-center-menu"
+            "menu": ""
           }
         },
         "text_QitQNL": {
           "type": "text",
           "settings": {
             "heading": "",
-            "heading_image": "shopify://shop_images/diviniti-new-footer-logo.png",
-            "subtext": "<p>N 154, N Block, Greater Kailash 1, Delhi 110048, India</p><p>(+91) 95997 80011</p><p>info@diviniti.com</p>"
+            "subtext": "<p>C 95, 2nd Floor, C Block, Sanjay Gram, Gurgaon (HR) 122001, India</p><p>(+91) 8178 777 433</p><p>info@shaluarts.com</p>"
           }
         },
         "link_list_FqPpVp": {
           "type": "link_list",
           "settings": {
             "heading": "Company",
-            "menu": "company"
+            "menu": ""
           }
         },
         "link_list_kB8bkY": {
           "type": "link_list",
           "settings": {
             "heading": "Products",
-            "menu": "dg35809jmiaml23"
+            "menu": ""
           }
         },
         "link_list_JhbqfG": {
           "type": "link_list",
           "settings": {
             "heading": "Our Policy",
-            "menu": "info"
+            "menu": ""
           }
         }
       },
