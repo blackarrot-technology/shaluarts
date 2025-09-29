@@ -1,0 +1,54 @@
+{{ 'section-main-product.css' | asset_url | stylesheet_tag }}
+
+{{ 'component-accordion.css' | asset_url | stylesheet_tag }}
+
+<div class="product-description-section">
+    <div class="page-width">
+        <div class="product__accordion accordion">
+            <details open="">
+                <summary>
+                    <div class="summary__title">
+                    <h2 class="h4 accordion__title inline-richtext">
+                        {{ section.settings.section_title }}
+                    </h2>
+                    </div>
+                    {{- 'icon-caret.svg' | inline_asset_content -}}
+                </summary>
+
+                <div class="accordion__content rte" id="ProductAccordion-main-desc">
+                    <div class="product-description-content">
+                        {{ product.description }}
+                    </div>
+                </div>
+            </details>
+        </div>
+    </div>
+</div>
+{% comment %}
+<div class="buy-it-with-section">
+    <div class="page-width">
+        <div class="buy-it-with-collection">
+            {% render 'buy_it_with' %}
+        </div>
+    </div>
+</div>
+{% endcomment %}
+ 
+{% schema %}
+{
+  "name": "Product Full Description",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section Title",
+      "default": "Product Description"
+    }
+  ],
+  "presets": [
+    {
+        "name": "Product Full Description",
+    }
+  ]
+}
+{% endschema %}

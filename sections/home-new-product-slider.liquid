@@ -1,0 +1,182 @@
+{{ 'home-new-product-slider.css' | asset_url | stylesheet_tag }}
+
+<style>
+  .home-new-product-slider-section {
+    padding: {{ section.settings.slider_top_spacing }}px 0 {{ section.settings.slider_bottom_spacing }}px;
+  }
+
+  @media (max-width: 768px) {
+    .home-new-product-slider-section {
+      padding: {{ section.settings.slider_mobile_top_spacing }}px 0 {{ section.settings.slider_mobile_bottom_spacing }}px;
+    }
+  }
+</style>
+
+{%- liquid
+  assign selected_collection = collections[section.settings.slider_collection]
+  assign products_to_display = section.settings.slider_product_limit | default: 4
+
+  if selected_collection
+    assign total_products = selected_collection.products.size
+    assign products_to_display = products_to_display | min: total_products
+  else
+    assign total_products = 0
+  endif
+-%}
+
+<div class="home-new-product-slider-section">
+  <div class="page-width">
+    <div class="new-product-collec-container row">
+      
+      <!-- Left Column -->
+      <div class="new-product-collect-left-sec">
+        <h2 class="section-title">{{ section.settings.slider_title }}</h2>
+        <h3 class="section-subtitle">{{ section.settings.slider_subtitle }}</h3>
+        {% if section.settings.slider_button_text and section.settings.slider_button_link %}
+          <a href="{{ section.settings.slider_button_link }}" class="view-more-btn button btn-primary">
+            {{ section.settings.slider_button_text }}
+          </a>
+        {% endif %}
+      </div>
+
+      <!-- Right Column -->
+      <div class="new-product-collect-right-sec">
+        <div class="collection-grids">
+          {% if selected_collection and total_products > 0 %}
+            <div class="product-collect-scroller row">
+              {%- for product in selected_collection.products limit: products_to_display -%}
+                <div class="product-card" >
+                  {% render 'card-product',
+                    card_product: product,
+                    media_aspect_ratio: section.settings.image_ratio,
+                    image_shape: section.settings.image_shape,
+                    show_secondary_image: section.settings.show_secondary_image,
+                    show_vendor: section.settings.show_vendor,
+                    show_rating: section.settings.show_rating,
+                    skip_styles: skip_card_product_styles,
+                    section_id: section.id,
+                    quick_add: section.settings.quick_add
+                  %}
+                </div>
+                {%- assign skip_card_product_styles = true -%}
+              {%- endfor -%}
+            </div>
+          {% else %}
+            <p>No products available in the selected collection.</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Home Product Slider",
+  "class": "home-product-slider",
+  "settings": [
+    {
+      "type": "text",
+      "id": "slider_title",
+      "label": "Title",
+      "default": "Featured Collection"
+    },
+    {
+      "type": "textarea",
+      "id": "slider_subtitle",
+      "label": "Subtitle",
+      "default": "Browse our latest products"
+    },
+    {
+      "type": "text",
+      "id": "slider_button_text",
+      "label": "Button Text",
+      "default": "Shop Now"
+    },
+    {
+      "type": "url",
+      "id": "slider_button_link",
+      "label": "Button Link",
+      "default": "/collections/all"
+    },
+    {
+      "type": "collection",
+      "id": "slider_collection",
+      "label": "Collection"
+    },
+    {
+      "type": "number",
+      "id": "slider_product_limit",
+      "label": "Number of Products to Show",
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "slider_top_spacing",
+      "label": "Top Spacing (Desktop, px)",
+      "unit": "px",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "slider_bottom_spacing",
+      "label": "Bottom Spacing (Desktop, px)",
+      "unit": "px",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "slider_mobile_top_spacing",
+      "label": "Top Spacing (Mobile, px)",
+      "unit": "px",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "slider_mobile_bottom_spacing",
+      "label": "Bottom Spacing (Mobile, px)",
+      "unit": "px",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 20
+    },
+    {
+      "type": "select",
+      "id": "quick_add",
+      "default": "none",
+      "label": "t:sections.main-collection-product-grid.settings.quick_add.label",
+      "info": "t:sections.main-collection-product-grid.settings.quick_add.info",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:sections.main-collection-product-grid.settings.quick_add.options.option_1"
+        },
+        {
+          "value": "standard",
+          "label": "t:sections.main-collection-product-grid.settings.quick_add.options.option_2"
+        },
+        {
+          "value": "bulk",
+          "label": "t:sections.main-collection-product-grid.settings.quick_add.options.option_3"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Home Product Slider",
+      "category": "Custom Sections"
+    }
+  ]
+}
+{% endschema %}

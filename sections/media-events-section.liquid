@@ -1,0 +1,163 @@
+{{ 'media-events-section.css' | asset_url | stylesheet_tag }}
+<style>
+    .media-events-section {
+      padding: {{ section.settings.mediaevent_padding_top }}px 0 {{ section.settings.mediaevent_padding_bottom }}px;
+    }
+  
+    @media (max-width: 768px) {
+      .media-events-section {
+        padding: {{ section.settings.mediaevent_mobile_padding_top }}px 0 {{ section.settings.mediaevent_mobile_padding_bottom }}px;
+      }
+    }
+</style>
+
+<div class="media-events-section">
+  <div class="page-width">
+    <!-- Heading Section -->
+    <div class="heading-wrapper">
+      <h2 class="section-heading">{{ section.settings.mediaevent_heading }}</h2>
+      <h3 class="section-subheading">{{ section.settings.mediaevent_subheading }}</h3>
+    </div>
+
+    <!-- Blocks Section -->
+    <div class="blocks-wrapper">
+      {%- for block in section.blocks -%}
+        <div class="mediaevent-block">
+          <div class="mediaevent-block-content">
+            <div class="image-area">
+            
+            <!-- Event Image -->
+            {%- if block.settings.event_image != blank -%}
+                <img src="{{ block.settings.event_image | img_url: 'large' }}" alt="{{ block.settings.event_title }}" class="event-image">              
+            {%- endif -%}
+            </div>
+            
+            <!-- Event Title and Subtitle -->
+            <h3 class="mediaevent-title">{{ block.settings.event_title }}</h3>
+            <p class="mediaevent-subtitle">{{ block.settings.event_subtitle }}</p>
+
+          </div>
+        </div>
+      {%- endfor -%}
+    </div>
+
+    {% if section.settings.mediaevent_button_text and section.settings.mediaevent_button_link %}
+        <div class="btn-container">
+            <a target="_blank" href="{{ section.settings.mediaevent_button_link }}" class="view-more-btn button btn-primary">
+                {{ section.settings.mediaevent_button_text }}
+            </a>
+        </div>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Media Event Section",
+  "tag": "section",
+  "class": "section-custom-media-events",
+  "max_blocks": 12,
+  "settings": [
+    {
+        "type": "inline_richtext",
+        "id": "mediaevent_heading",
+        "default": "Section Heading",
+        "label": "Section Heading"
+    },
+    {
+        "type": "inline_richtext",
+        "id": "mediaevent_subheading",
+        "default": "Section Subheading",
+        "label": "Section Subheading"
+    },
+    {
+        "type": "text",
+        "id": "mediaevent_button_text",
+        "label": "Button Text",
+        "default": "Explore"
+    },
+    {
+        "type": "url",
+        "id": "mediaevent_button_link",
+        "label": "Button Link",
+        "default": "/"
+    },
+    {
+        "type": "range",
+        "id": "mediaevent_padding_top",
+        "label": "Top Padding (px)",
+        "default": 40,
+        "min": 0,
+        "max": 100,
+        "step": 1
+    },
+    {
+        "type": "range",
+        "id": "mediaevent_padding_bottom",
+        "label": "Bottom Padding (px)",
+        "default": 40,
+        "min": 0,
+        "max": 100,
+        "step": 1
+    },
+    {
+        "type": "range",
+        "id": "mediaevent_mobile_padding_top",
+        "label": "Top Spacing (Mobile, px)",
+        "unit": "px",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "default": 20
+    },
+    {
+        "type": "range",
+        "id": "mediaevent_mobile_padding_bottom",
+        "label": "Bottom Spacing (Mobile, px)",
+        "unit": "px",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "default": 20
+    }  
+  ],
+  "blocks": [
+    {
+      "type": "collection_block",
+      "name": "Media Events",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "event_image",
+          "label": "Upload Event Image"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "event_title",
+          "default": "Event Title",
+          "label": "Event Title"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "event_subtitle",
+          "default": "Event Subtitle",
+          "label": "Event Subtitle"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Media Events",
+      "blocks": [
+        {
+          "type": "collection_block"
+        },
+        {
+          "type": "collection_block"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

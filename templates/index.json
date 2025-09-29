@@ -1,0 +1,493 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_BCn4di": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_cYwNNi": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/TOP-BANNERS-1.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_NB8RCb": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/TOP-BANNERS-999SILVER-24K-GOLD.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_7JhMrU": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/TOP-BANNERS-CORPORATE.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_e3xwbR": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/TOP-BANNERS-UNIVERSITY.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_iyLpyD": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/TOP-BANNERS-POG.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_cYwNNi",
+        "slide_NB8RCb",
+        "slide_7JhMrU",
+        "slide_e3xwbR",
+        "slide_iyLpyD"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "small",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "home_collection_9RDMdL": {
+      "type": "home-collection",
+      "blocks": {
+        "collection_block_LjPEWz": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "divine",
+            "collection_image": "shopify://shop_images/image_16.png",
+            "block_title": "Divine",
+            "block_subtitle": "Explore"
+          }
+        },
+        "collection_block_cdPXxL": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "home-decor",
+            "collection_image": "shopify://shop_images/image_17.png",
+            "block_title": "Home Décor",
+            "block_subtitle": "Explore"
+          }
+        },
+        "collection_block_7Dg6Yb": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "automobile",
+            "collection_image": "shopify://shop_images/image_18.png",
+            "block_title": "Automobile",
+            "block_subtitle": "Explore"
+          }
+        },
+        "collection_block_TkGN33": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "corporate",
+            "collection_image": "shopify://shop_images/image_19.png",
+            "block_title": "Corporate",
+            "block_subtitle": "Explore"
+          }
+        },
+        "collection_block_mVjDY7": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "university",
+            "collection_image": "shopify://shop_images/image_20.png",
+            "block_title": "University",
+            "block_subtitle": "Explore"
+          }
+        },
+        "collection_block_n3brda": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "wedding",
+            "collection_image": "shopify://shop_images/image_21.png",
+            "block_title": "Wedding",
+            "block_subtitle": "Explore"
+          }
+        },
+        "collection_block_mLmQV8": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "incense-aroma",
+            "collection_image": "shopify://shop_images/image_22.png",
+            "block_title": "Incense Aromas",
+            "block_subtitle": "Explore"
+          }
+        },
+        "collection_block_xgk3ki": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "ram-mandir",
+            "collection_image": "shopify://shop_images/image_23.png",
+            "block_title": "Ram Mandir",
+            "block_subtitle": "Explore"
+          }
+        },
+        "collection_block_AmyWwN": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "yantra",
+            "collection_image": "shopify://shop_images/image_24.png",
+            "block_title": "Yantra",
+            "block_subtitle": "Explore"
+          }
+        },
+        "collection_block_bErqe8": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "925-pure-silver",
+            "collection_image": "shopify://shop_images/image_25.png",
+            "block_title": "Pure Silver",
+            "block_subtitle": "Explore"
+          }
+        }
+      },
+      "block_order": [
+        "collection_block_LjPEWz",
+        "collection_block_cdPXxL",
+        "collection_block_7Dg6Yb",
+        "collection_block_TkGN33",
+        "collection_block_mVjDY7",
+        "collection_block_n3brda",
+        "collection_block_mLmQV8",
+        "collection_block_xgk3ki",
+        "collection_block_AmyWwN",
+        "collection_block_bErqe8"
+      ],
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "heading": "Categories",
+        "subheading": "Explore Our Curated Collections"
+      }
+    },
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Browse our latest products",
+            "heading_size": "h0"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/MIDDLE-BANNER-HOME-DECOR.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Best Seller",
+        "subtitle": "Our Most Loved Designs",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "center_slider_yjHrpy": {
+      "type": "center-slider",
+      "blocks": {
+        "video_slide_KNVJwp": {
+          "type": "video_slide",
+          "settings": {
+            "video_type": "uploaded",
+            "video_id": "jlUQcpeUpYA",
+            "uploadedvideourl": "https://cdn.shopify.com/videos/c/o/v/df074e8890324dd18924fde864b72f16.mp4",
+            "thumbnail_image": "shopify://shop_images/sddefault_2a9a4d25-9f8d-4065-af69-b35149444a3b.jpg",
+            "video_date": "10 Nov 2024",
+            "video_caption": "Premium Pooja Set for Diwali"
+          }
+        },
+        "video_slide_ne8WD6": {
+          "type": "video_slide",
+          "settings": {
+            "video_type": "uploaded",
+            "video_id": "jlUQcpeUpYA",
+            "uploadedvideourl": "https://cdn.shopify.com/videos/c/o/v/c373e1d4d3844c43a88b95cd3d1e803a.mp4",
+            "thumbnail_image": "shopify://shop_images/sddefault_2a9a4d25-9f8d-4065-af69-b35149444a3b.jpg",
+            "video_date": "24 Oct 2024",
+            "video_caption": "Premium Pooja Set for Ganesh Pooja"
+          }
+        },
+        "video_slide_KQd37g": {
+          "type": "video_slide",
+          "settings": {
+            "video_type": "uploaded",
+            "video_id": "jlUQcpeUpYA",
+            "uploadedvideourl": "https://cdn.shopify.com/videos/c/o/v/4a40ed598a1f4cd5bfd4c95bc953495d.mp4",
+            "thumbnail_image": "shopify://shop_images/sddefault_2a9a4d25-9f8d-4065-af69-b35149444a3b.jpg",
+            "video_date": "20 Dec 2024",
+            "video_caption": "Premium Pooja Set for Laxmi Pooja"
+          }
+        },
+        "video_slide_ppLeQF": {
+          "type": "video_slide",
+          "settings": {
+            "video_type": "uploaded",
+            "video_id": "jlUQcpeUpYA",
+            "uploadedvideourl": "https://cdn.shopify.com/videos/c/o/v/2ce9653b0cec4c3587f167bf496a27d3.mp4",
+            "thumbnail_image": "shopify://shop_images/sddefault_2a9a4d25-9f8d-4065-af69-b35149444a3b.jpg",
+            "video_date": "12 Jan 2024",
+            "video_caption": "Premium Pooja Set for Shiv Pooja"
+          }
+        },
+        "video_slide_3DRfnh": {
+          "type": "video_slide",
+          "settings": {
+            "video_type": "uploaded",
+            "video_id": "jlUQcpeUpYA",
+            "uploadedvideourl": "https://cdn.shopify.com/videos/c/o/v/687370539f144a95964aff804b2ffa5e.mp4",
+            "thumbnail_image": "shopify://shop_images/sddefault_2a9a4d25-9f8d-4065-af69-b35149444a3b.jpg",
+            "video_date": "29 Mar 2024",
+            "video_caption": "Premium Pooja Set for Parvati Pooja"
+          }
+        },
+        "video_slide_4dcejJ": {
+          "type": "video_slide",
+          "disabled": true,
+          "settings": {
+            "video_type": "youtube",
+            "video_id": "jlUQcpeUpYA",
+            "uploadedvideourl": "",
+            "thumbnail_image": "shopify://shop_images/sddefault_2a9a4d25-9f8d-4065-af69-b35149444a3b.jpg",
+            "video_date": "28 May 2024",
+            "video_caption": "Premium Pooja Set for Hanuman Pooja"
+          }
+        },
+        "video_slide_Nx47xU": {
+          "type": "video_slide",
+          "disabled": true,
+          "settings": {
+            "video_type": "youtube",
+            "video_id": "jlUQcpeUpYA",
+            "uploadedvideourl": "",
+            "thumbnail_image": "shopify://shop_images/sddefault_2a9a4d25-9f8d-4065-af69-b35149444a3b.jpg",
+            "video_date": "18 Aug 2024",
+            "video_caption": "Premium Pooja Set for Kanya Poojan"
+          }
+        }
+      },
+      "block_order": [
+        "video_slide_KNVJwp",
+        "video_slide_ne8WD6",
+        "video_slide_KQd37g",
+        "video_slide_ppLeQF",
+        "video_slide_3DRfnh",
+        "video_slide_4dcejJ",
+        "video_slide_Nx47xU"
+      ],
+      "settings": {
+        "heading": "Explore our customization",
+        "subheading": "Customization",
+        "custom_video_padding_top": 40,
+        "custom_video_padding_bottom": 40,
+        "custom_video_mobile_padding_top": 20,
+        "custom_video_mobile_padding_bottom": 20
+      }
+    },
+    "home_new_product_slider_NVbXRB": {
+      "type": "home-new-product-slider",
+      "settings": {
+        "slider_title": "New Arrival",
+        "slider_subtitle": "Discover Our Latest Treasures",
+        "slider_button_text": "View More",
+        "slider_button_link": "shopify://collections/all",
+        "slider_collection": "all",
+        "slider_product_limit": 5,
+        "slider_top_spacing": 40,
+        "slider_bottom_spacing": 40,
+        "slider_mobile_top_spacing": 20,
+        "slider_mobile_bottom_spacing": 20,
+        "quick_add": "standard"
+      }
+    },
+    "insta_feed_section_3KLp9r": {
+      "type": "insta-feed-section",
+      "settings": {
+        "instafeeds_title": "Social Media",
+        "instafeeds_subtitle": "Express Yourself <b>with</b> #Diviniti",
+        "instafeeds_button_text": "Explore Instagram",
+        "instafeeds_button_link": "https://www.instagram.com/houseofdiviniti",
+        "instafeeds_padding_top": 70,
+        "instafeeds_padding_bottom": 70,
+        "instafeeds_mobile_padding_top": 20,
+        "instafeeds_mobile_padding_bottom": 20
+      }
+    },
+    "media_events_section_zjC8g7": {
+      "type": "media-events-section",
+      "blocks": {
+        "collection_block_39GFYA": {
+          "type": "collection_block",
+          "settings": {
+            "event_image": "shopify://shop_images/event-pic-1.png",
+            "event_title": "Diviniti News Event",
+            "event_subtitle": "A proud moment for us as we presented our Portrait on 24k Gold to the lovely Rakul Preet at the International Quality Awards by Brands Impact."
+          }
+        },
+        "collection_block_GcAVYD": {
+          "type": "collection_block",
+          "settings": {
+            "event_image": "shopify://shop_images/event-pic-2.png",
+            "event_title": "Diviniti News Event",
+            "event_subtitle": "We are thrilled to have been the gifting sponsor for the prestigious @BrandsImpact Event held on December 22nd, at @vivantahotels - New Delhi."
+          }
+        },
+        "collection_block_q9ndNV": {
+          "type": "collection_block",
+          "settings": {
+            "event_image": "shopify://shop_images/event-pic-3.png",
+            "event_title": "Diviniti News Event",
+            "event_subtitle": "Make this Christmas Unforgettable for your Loved ones with Diviniti’s unique collection of sterling silver and 24k gold-plated gifts!"
+          }
+        }
+      },
+      "block_order": [
+        "collection_block_39GFYA",
+        "collection_block_GcAVYD",
+        "collection_block_q9ndNV"
+      ],
+      "settings": {
+        "mediaevent_heading": "DIVINITI",
+        "mediaevent_subheading": "News & Events",
+        "mediaevent_button_text": "View More",
+        "mediaevent_button_link": "/",
+        "mediaevent_padding_top": 50,
+        "mediaevent_padding_bottom": 36,
+        "mediaevent_mobile_padding_top": 20,
+        "mediaevent_mobile_padding_bottom": 20
+      }
+    }
+  },
+  "order": [
+    "slideshow_BCn4di",
+    "home_collection_9RDMdL",
+    "image_banner",
+    "featured_collection",
+    "center_slider_yjHrpy",
+    "home_new_product_slider_NVbXRB",
+    "insta_feed_section_3KLp9r",
+    "media_events_section_zjC8g7"
+  ]
+}

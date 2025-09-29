@@ -1,0 +1,232 @@
+{% comment %}
+  <div class="slider-section">
+    <div class="page-width">
+      <!-- Section Heading -->
+      <div class="slider-heading">
+        <h3>{{ section.settings.subheading }}</h3>
+        <h2>{{ section.settings.heading }}</h2>
+      </div>
+
+      <!-- Video Slider -->
+      <div class="center-slider">
+        {% for block in section.blocks %}
+          <div class="slider-item">
+            <!-- Image Thumbnail -->
+            <div class="video-thumbnail" data-video-type="{{ block.settings.video_type }}" data-video-id="{{ block.settings.video_id }}" data-uploaded-video="{{ block.settings.uploaded_video | file_url }}">
+              {% if block.settings.thumbnail_image != blank %}
+                <img src="{{ block.settings.thumbnail_image | file_url }}" alt="{{ block.settings.video_caption }}" />
+              {% else %}
+                <img src="https://via.placeholder.com/300" alt="Default Thumbnail" />
+              {% endif %}
+            </div>
+
+            <!-- Caption -->
+            <div class="caption-overlay">
+              <p>{{ block.settings.video_caption }}</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endcomment %}
+
+<style>
+  .customized-video-slider {
+    padding: {{ section.settings.custom_video_padding_top }}px 0 {{ section.settings.custom_video_padding_bottom }}px;
+  }
+
+  @media (max-width: 768px) {
+    .customized-video-slider {
+      padding: {{ section.settings.custom_video_mobile_padding_top }}px 0 {{ section.settings.custom_video_mobile_padding_bottom }}px;
+    }
+  }
+</style>
+
+
+<div id="customized-video-slider" class="customized-video-slider">
+  <div class="slider-section section-custom-collection section-template--18951029424364__home_collection_9RDMdL-padding">
+    <div class="page-width">
+      <div class="heading-wrapper">
+        <h2 class="section-heading">{{ section.settings.subheading }}</h2>
+        <h3 class="section-subheading">{{ section.settings.heading }}</h3>
+      </div>
+      <div class="swiper-container two" style="background-image: url('{{ section.settings.thumbnail_image | file_url }}');">
+        <div class="swiper-wrapper">
+          {% for block in section.blocks %}
+            <div class="swiper-slide">
+              <div class="slider-video">
+                {% if block.settings.video_type == 'youtube' %}
+                  <iframe 
+                    width="100%" 
+                    height="542" 
+                    src="https://www.youtube.com/embed/{{ block.settings.video_id }}?autoplay=0&controls=0&modestbranding=1&showinfo=0&rel=0&cc_load_policy=0" 
+                    frameborder="0" 
+                    allow="autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                  </iframe>
+                {% elsif block.settings.video_type == 'vimeo' %}
+                  <iframe
+                    src="https://player.vimeo.com/video/{{ block.settings.video_id }}"
+                    width="305"
+                    height="542"
+                    frameborder="0"
+                    allow="autoplay; fullscreen"
+                    allowfullscreen
+                  ></iframe>
+                {% elsif block.settings.video_type == 'uploaded' %}
+                  <video width="100%" height="auto" controls>
+                    <source src="{{ block.settings.uploadedvideourl }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                {% endif %}
+              </div>
+  
+              {% if block.settings.video_caption %}
+                <div class="video-info">
+                  <h3>{{ block.settings.video_caption }}</h3>
+                </div>
+              {% endif %}
+
+              {% if block.settings.video_date %}
+                <div class="video-date">
+                  <p>{{ block.settings.video_date }}</p>
+                </div>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+        <!-- Swiper Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+
+
+
+{% schema %}
+  {
+    "name": "Video Slider with Popup",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Our Featured Videos"
+      },
+      {
+        "type": "textarea",
+        "id": "subheading",
+        "label": "Subheading",
+        "default": "Explore our curated video collection."
+      },{
+        "type": "range",
+        "id": "custom_video_padding_top",
+        "label": "Top Padding (px)",
+        "default": 40,
+        "min": 0,
+        "max": 100,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "custom_video_padding_bottom",
+        "label": "Bottom Padding (px)",
+        "default": 40,
+        "min": 0,
+        "max": 100,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "custom_video_mobile_padding_top",
+        "label": "Top Spacing (Mobile, px)",
+        "unit": "px",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "default": 20
+      },
+      {
+        "type": "range",
+        "id": "custom_video_mobile_padding_bottom",
+        "label": "Bottom Spacing (Mobile, px)",
+        "unit": "px",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "default": 20
+      },
+    ],
+    "blocks": [
+      {
+        "type": "video_slide",
+        "name": "Video Slide",
+        "settings": [
+          {
+            "type": "select",
+            "id": "video_type",
+            "label": "Video Type",
+            "options": [
+              {
+                "value": "youtube",
+                "label": "YouTube"
+              },
+              {
+                "value": "vimeo",
+                "label": "Vimeo"
+              },
+              {
+                "value": "uploaded",
+                "label": "Uploaded Video"
+              }
+            ],
+            "default": "youtube"
+          },
+          {
+            "type": "text",
+            "id": "video_id",
+            "label": "YouTube/Vimeo Video ID"
+          },
+          {
+            "type": "text",
+            "id": "uploadedvideourl",
+            "label": "Uploaded Video URL",
+            "info": "Upload your video to Shopify's Files section and paste the URL here. Required if Video Type is Uploaded."
+          },
+          {
+            "type": "image_picker",
+            "id": "thumbnail_image",
+            "label": "Thumbnail Image"
+          },
+          {
+            "type": "text",
+            "id": "video_date",
+            "label": "Video Date",
+            "default": "2024-01-01"
+          },
+          {
+            "type": "image_picker",
+            "id": "background_image",
+            "label": "Background Cover Image"
+          },
+          {
+            "type": "text",
+            "id": "video_caption",
+            "label": "Video Caption",
+            "default": "Video Caption"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Video Slider with Popup",
+        "category": "Custom Sections"
+      }
+    ]
+  }
+{% endschema %}
+  

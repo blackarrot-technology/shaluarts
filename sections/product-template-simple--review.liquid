@@ -1,0 +1,44 @@
+<div class="container{%-if section.settings.product_fullwidth-%}-fluid{%-endif-%}">
+  {%- if settings.enable_review -%}
+  <div id="product-tab-reviews" class="mt-8 mt-lg-10">
+    
+    {% case settings.review_app %}
+      {% when 'shopify_reviews' %}
+      <div id="shopify-product-reviews" data-id="{{ product.id }}">{{ product.metafields.spr.reviews }}</div>
+      {% when 'lai_reviews' %}  
+      <div class="scm-container custom" style="display: none;">
+        <div id="scm-reviews-importer">
+          <iframe id="scm-reviews-importer-iframe" width="100%"></iframe>
+        </div>
+      </div>
+      <script>
+          document.addEventListener("beforeScrollToReviewWidget", function (e) {
+          let reviewButtons= document.querySelectorAll('a[href="#product-tab-reviews"]:not(.active)');
+          reviewButtons.forEach(reviewButton => reviewButton.click());
+        });
+      </script>
+      {% else %}
+    {% endcase %}
+    
+  </div>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Product - Review",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "You can choose whichever app you want in Theme settings > PRODUCT SETTINGS > Reviews > Reviews app"
+    },
+    {
+      "type": "checkbox",
+      "id": "product_fullwidth",
+      "label": "Full Width",
+      "default": false
+    }
+  ]
+}
+{% endschema %}

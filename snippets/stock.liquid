@@ -1,0 +1,31 @@
+{% comment %} <div class="items-left-section">
+    {{ product.selected_or_first_available_variant.inventory_quantity }} TEST
+    {% if product.selected_or_first_available_variant %}
+      {{ product.selected_or_first_available_variant.inventory_quantity }}
+  {% else %}
+      Out of Stock
+  {% endif %}
+  
+    {% assign first_variant = product.variants.first %}
+    {% if first_variant.inventory_management and first_variant.inventory_quantity > 0 %}
+        <p class="item_Is_instock">Hurry Up! Only <span>{{ first_variant.inventory_quantity }}</span> Items Left</p>
+    {% elsif first_variant.inventory_management %}
+        <p class="item_Is_outstock">Sorry, the item you are looking for is currently out of stock</p>
+    {% endif %}
+</div> {% endcomment %}
+{% comment %} 
+  <!-- Inventory Calculation -->
+  {% for variant in product.variants %}
+    {% if variant.inventory_management %}
+      {% assign total_inventory = total_inventory | plus: variant.inventory_quantity %}
+    {% endif %}
+  {% endfor %}
+
+  <!-- Inventory Status Message -->
+  <div class="inventory-status">
+    {% if total_inventory > 0 %}
+      <p class="item_Is_instock">Hurry Up! Only <span>{{ total_inventory }}</span> Items Left</p>
+    {% else %}
+      <p class="item_Is_outstock">Sorry, this item is currently out of stock</p>
+    {% endif %}
+  </div> {% endcomment %}
